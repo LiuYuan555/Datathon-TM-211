@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 from sklearn.metrics import balanced_accuracy_score, f1_score
 
-def test_model_on_excel_sample(excel_path):
+def test_model_on_excel(excel_path):
     """
     Tests a trained LightGBM model on a sample Excel file containing CTG data.
     Displays per-row predictions, class probabilities, balanced accuracy, and macro F1 score.
@@ -85,4 +85,4 @@ def test_model_on_excel_sample(excel_path):
 
 # Example run
 if __name__ == "__main__":
-    results, balanced_acc, macro_f1 = test_model_on_excel_sample("CTG_first10_combined.xlsx")
+    results, balanced_acc, macro_f1 = test_model_on_excel("CTG_first10_combined.xlsx")
